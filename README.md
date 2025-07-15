@@ -19,3 +19,7 @@ Use the following command to run the project.
 ../../OpenROAD/build/src/openroad -python main.py --d <The name of the benchmark>
 '''
 
+```
+docker build -t <image_name>.
+docker run -it --name <container_name> <image_name>
+```
