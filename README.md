@@ -1,10 +1,10 @@
-# Resynthesizer Project
+# Resynthesizer 
 
 This project is an implementation of a resynthesize algorithm utilizing OpenROAD.
 
 ---
 
-##File Structure
+## File Structure
 
 * `main.py`: The main execution file for the project.
 * `OpenROAD_pnr.py`: Contains the core **resynthesize algorithm**.
