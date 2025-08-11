@@ -154,16 +154,8 @@ def run_flow(design_name):
         design = repair_timing(design)
     # # fileDir = "./"    
 
-    outDir = "./results/post_%s"%design_name
+    outDir = "./results
     os.makedirs(outDir, exist_ok=True)
     
-    fname = outDir+"/gr_init_results.csv"
-
-    # Write final DEF file
-    design.writeDef("%s/post_global_route.def"%outDir)
-    
     # Write final Verilog file
-    design.evalTclString("write_verilog %s/post_global_route.v"%outDir)
-    
-    # Write final odb file
-    design.writeDb("%s/post_global_route.odb"%outDir)
+    design.evalTclString(f"write_verilog ./results/{design_name}_resynth.v")
