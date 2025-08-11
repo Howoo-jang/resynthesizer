@@ -154,7 +154,7 @@ def run_flow(design_name):
         design = repair_timing(design)
     # # fileDir = "./"    
 
-    outDir = "./results
+    outDir = "./results"
     os.makedirs(outDir, exist_ok=True)
     
     # Write final Verilog file
